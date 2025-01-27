@@ -1,7 +1,10 @@
 *{
     margin: auto;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+
 
 header{
     h1{
@@ -23,7 +26,7 @@ main{
 }
 
 .container{
-    width: 100%;
+    width: 80%%;
     padding: 0;
 
     h3{
@@ -31,10 +34,50 @@ main{
         font-size: 7px;
         font-family: sans-serif;
     }
+
+    h1{
+        font-family: sans-serif;
+        color: #4e3969;
+        font-size: 20px;
+        padding-top: 5px;
+    }
 }
 
 
 
+.row{
+    
+    display: flex;
+    width: 80%;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 1px 1px rgba(128, 128, 128, 0.214);
+
+}
+
+
+
+.col-8{
+width: calc(100% / 8 * 8);
+}
+
+.col-4{
+    width: calc(100% / 4 * 4);
+}
+
+li{
+    list-style: none;
+    padding: 2px;
+    font-size: 10px;
+
+    h4{
+        padding-bottom: 10px;
+    }
+}
+
+.text-grey{
+    color: grey;
+}
 
 
 
@@ -61,10 +104,27 @@ main{
     .logo{
         display: flex;
     }
-    h1{
-        justify-content: center;
+   
+    h1, h3{
+        padding-left: 20px;
     }
+
+    .row{
+        display: block;
+        width: 90%;
+        
+    }
+
+
+    .dolce{
+        display: none;
+    }
+    
 }
+
+
+
+
 
 
 @media screen and (min-width:768px){
@@ -72,6 +132,33 @@ main{
     .container{
         padding: 20px;
     }
+
+
+    .row{
+        display: block;
+    }
+    
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+
+        
+       
+    }
+    li{
+        padding: 2px 30px;
+    }
+
+    .col-4{
+        width: 60%;
+        margin: 0;
+    }
+
+    h1, h3{
+        padding-left: 70px;
+    }
+
+    
 }
 
 
