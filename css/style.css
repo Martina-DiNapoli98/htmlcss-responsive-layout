@@ -11,6 +11,7 @@ header{
         font-family: cursive;
         color: #ff9614;
         padding: 2px 5px;
+        text-align: center;
     }
     
 }
@@ -26,8 +27,10 @@ main{
 }
 
 .container{
-    width: 80%%;
-    padding: 0;
+    width: 80%;
+    padding: 20px;
+    
+   
 
     h3{
         color: grey;
@@ -40,15 +43,21 @@ main{
         color: #4e3969;
         font-size: 20px;
         padding-top: 5px;
+
     }
+}
+
+.icon{
+    display:flex ;
+    margin-top: 20px;
 }
 
 
 
 .row{
     
-    display: flex;
-    width: 80%;
+    
+    width: 100%;
     background-color: white;
     margin-top: 10px;
     box-shadow: 1px 1px rgba(128, 128, 128, 0.214);
@@ -59,6 +68,7 @@ main{
 
 .col-8{
 width: calc(100% / 8 * 8);
+
 }
 
 .col-4{
@@ -79,48 +89,54 @@ li{
     color: grey;
 }
 
+.text-none{
+    display: none;
+}
+
+.ban{
+    
+    display: none;
+}
+
+.title{
+    padding: 30px 0;
+}
 
 
+footer{
+    font-size: 10px;
+    color: white;
+    background-color: #7c69a4;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:480px){
-
-    .logo{
-        display: flex;
-    }
-   
-    h1, h3{
-        padding-left: 20px;
-    }
-
-    .row{
-        display: block;
-        width: 90%;
-        
-    }
-
-
-    .dolce{
-        display: none;
+    a{
+        color: white;
     }
     
+    h4{
+        text-align: center;
+        padding-top: 10px;
+    }
+    p{
+        padding-top: 10px;
+        text-align: center;
+    }
+    ul{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 40px;
+        
+    }
+    
+
+    
+    
 }
+
+
+
+
+
 
 
 
@@ -130,35 +146,99 @@ li{
 @media screen and (min-width:768px){
 
     .container{
+        min-width: 768px;
         padding: 20px;
     }
 
 
     .row{
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     ul{
         display: flex;
-        flex-wrap: wrap;
-
-        
-       
+        flex-wrap: wrap; 
+        gap: 10px 200px;
     }
-    li{
-        padding: 2px 30px;
-    }
+    
 
+   
     .col-4{
-        width: 60%;
-        margin: 0;
+        max-width: 768px;
+        padding-top: 20px;
+        
+        
     }
 
     h1, h3{
-        padding-left: 70px;
+        padding-left: 40px;
+    }
+
+  button{
+   
+    margin: 20px;
+    width: 100px;
+}  
+
+i{
+    font-size: 10px;
+}
+
+
+.ban{
+    display: block;
+}
+}
+
+
+@media screen and (min-width:992px){
+
+   
+
+    header h1{
+        text-align: start;
+    }
+    .row{
+        flex-wrap: nowrap;
+    }
+
+    .col-8{
+        width: calc(100% / 8 * 8);
+    }
+
+    .col-4{
+        width: calc(100% / 4 * 4);
+    }
+
+    .text-none{
+        display: block;
     }
 
     
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
